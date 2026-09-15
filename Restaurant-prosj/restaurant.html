@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        input[type=text], input[type=number], select{
+            width: 200px;
+        }
+
+        label{
+            display: inline-block;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+<h1 style="text-align: center">Meny</h1>
+<form action="registrering.html"></form>
+<label>Navn:</label>
+<input type="text" name="navn" required placeholder="Skriv inn navn">
+<br>
+<label>Kredittkort:</label>
+<input
+        type="text"
+        pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
+        placeholder="0000-0000-0000-0000"
+        required
+>
+<select name="mat" required>
+    <option value="">Hva ønsker du å spise?</option>
+    <option value="hamburger">Hamburger</option>
+    <option value="pizza">Pizza</option>
+    <option value="taco">Taco</option>
+</select>
+<br>
+<select name="drikke" required>
+    <option value="">Hva ønsker du å drikke?</option>
+    <option value="cola">Cola</option>
+    <option value="fanta">Fanta</option>
+    <option value="vann">Vann</option>
+    <option value="te">Te</option>
+    <option value="kaffe">Kaffe</option>
+</select>
+<br>
+<select name="siderett" required>
+    <option value="">Velg siderett</option>
+    <option value="løkringer">Løkringer</option>
+    <option value="pommes">Pommes</option>
+</select>
+<h4>Tilbehør:</h4>
+<input type="checkbox" name="salt" id="salt"><label for="salt">Salt</label>
+<input type="checkbox" name="ketsjup" id="ketsjup"><label for="ketsjup">Ketsjup</label>
+<input type="checkbox" name="sennep" id="sennep"><label for="sennep">Sennep</label>
+<button type="submit">Send inn</button>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Kombinasjoner av selektorer og tabeller</title>
+    <style>
+        html {
+            background: linear-gradient(
+            to right,
+            darkcyan,
+            blueviolet
+            );
+        }
+        thead tr {
+            background: linear-gradient(to right, darkred, hotpink);
+        }
+        .r {
+            border-right: 2px solid #2d174d;
+        }
+        .l {
+            border-left: 2px solid #2d174d;
+        }
+        .b {
+            border-bottom: 2px solid #2d174d;
+        }
+        body {
+            display: flex;
+            height: 600px;
+            justify-content: center;
+            align-items: center;
+        }
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            width: 450px;
+            background: linear-gradient(
+            to right,
+            darkgreen,
+            yellow
+            );
+            opacity: 0.2;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px #2d174d;
+        }
+        table, th, td {
+            font-family: "Roboto", sans-serif;
+            width: 450px;
+            height: 100px;
+            border-collapse: collapse;
+            border-radius: 10px;
+        }
+        th{
+            text-align: center;
+            font-size: 1.5em;
+        }
+        td{
+           padding: 8px;
+            font-size: 1.2em;
+        }
+
+        td:hover, th:hover {
+            background-color: #2d174d;
+            transition: 1s;
+        }
+        td:active {
+            width: 110px;
+            text-align: center;
+            font-size: 1.7em;
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+<body>
+<div>
+<table>
+    <thead>
+    <tr>
+        <th class="r b">AAaa</th>
+        <th class="r l b" >BBbb</th>
+        <th class="b">CCcc</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td class="b">AAaa</td>
+        <td class="r l b">BBbb</td>
+        <td class="b">CCcc</td>
+    </tr>
+    <tr>
+        <td>DDdd</td>
+        <td class="r l">EEee</td>
+        <td>FFff</td>
+    </tr>
+    </tbody>
+</table>
+</div>
+</body>
+</html>
