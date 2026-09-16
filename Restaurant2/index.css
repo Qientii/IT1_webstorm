@@ -24,7 +24,7 @@ body {
     padding: 30px;
     background-color: white;
     border: 2px solid #d8b4fe;
-    border-radius: 20px;
+    border-radius: 40px;
     box-shadow: 0 10px 30px #4c1d95;
 }
 
@@ -50,6 +50,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 8px;
+
 }
 
 .feltetikett {
@@ -60,12 +61,14 @@ body {
     padding: 10px;
     border: 1px solid #a78bfa;
     border-radius: 8px;
+    box-shadow: 0 2px 7px #4c1d95;
 }
 
 .valgfelt {
     padding: 10px;
     border: 1px solid #a78bfa;
     border-radius: 8px;
+    box-shadow: 0 2px 7px #4c1d95;
 }
 
 .menyseksjon {
@@ -79,6 +82,7 @@ body {
     background-color: #f5f3ff;
     border: 1px solid #c4b5fd;
     border-radius: 10px;
+    box-shadow: 0 2px 7px #4c1d95;
 }
 
 .gruppetittel {
@@ -109,6 +113,7 @@ body {
     padding: 10px;
     border: 1px solid #a78bfa;
     border-radius: 8px;
+    box-shadow: 0 2px 7px #4c1d95;
 }
 
 
