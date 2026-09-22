@@ -35,6 +35,8 @@ img {
     border-radius: 10px;
     width: 80%;
     height: 250px;
+    object-fit: cover;
+
 }
 
 #lenker {
@@ -63,7 +65,7 @@ nav a {
     text-align: center;
     padding: 10px 0;
     text-decoration: none;
-    transition: 0.25s ease-in-out;
+    transition: 0.25s;
     margin: 0;
 }
 
@@ -98,15 +100,37 @@ p {
     background-color: #2f4858;
     border: solid black 1px;
     color: white;
-    border-radius: 10px;
     padding: 0 10px;
+}
+nav {
+
+}
+
+nav a:hover {
+    display: block;
+    background-color: #15a4ff;
+    scale:1.2;
+    transition: ease-in 0.2s;
+
+}
+
+nav a:active {
+    background-color: #2f4858;
+}
+
+
+button {
+    height: 30px;
+    width: 170px;
+    background-color: #2f4858;
+}
+
+
+a {
+    margin-left: 10px;
+    color: gray;
 }
 
 a:hover {
-    background-color: red;
-    transform: scale(1.1);
-}
-
-a:active {
-    background-color: #2f4858;
+    cursor: pointer;
 }
